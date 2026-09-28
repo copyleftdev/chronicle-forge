@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chronicle-forge"
+version = "0.1.0"
+description = "A reproducible synthetic Git and GitHub forensics laboratory"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+chronicle-forge = "chronicle_forge.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["chronicle_forge*"]
